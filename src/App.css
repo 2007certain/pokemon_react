@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Roboto";
+}
+
+.slider {
+  position: relative;
+  width: 850px;
+  margin: 0 auto;
+  height: 350px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: transform ease-out 0.5s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+  margin: 0px 15px;
+  border: 1px solid #ccc;
+  height: 300px;
+}
+
+.slide p {
+  margin: 0;
+  display: flex;
+  padding: 15px 10px;
+  background: #008849;
+  color: #fff;
+}
+
+.button {
+  position: absolute;
+  top: 45%;
+  z-index: 999;
+  color: #fff;
+  background: rgb(0, 136, 73);
+  padding: 5px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 1px solid rgb(0, 136, 73);
+}
+
+.buttonWrapper {
+  position: absolute;
+  top: 82%;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+.nextButton {
+  right: 15px;
+}
+
+.prevButton {
+  left: 15px;
+}
